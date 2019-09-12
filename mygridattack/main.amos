@@ -1,0 +1,182 @@
+'AMOS 2 Character-based game 'a la PET' test by Giovanni Cardona v0.65  Feb 2019 
+
+Curs off
+
+
+InitVars:
+	gridC$="+": gw=32:gsx=3:gh=14:gsy=2: gridColor#=13
+	enemyBaseCount=gw: 
+	playerC$="T": playerLeft$=",": playerRight$=".": playerShoot$=" ": playerColor#=1: pxBase=20: pybase=gh+gsy+2 
+	missileC$="^": missileColor#=5
+	bombC$="x": gameExit$=" `"
+	restart=true
+	timBase=60 : timCount=0
+	score=0 : highestScore=0
+	level=0
+	swapg=1
+	enemyColor# = 10 
+	Dim enemyC$(3) :enemyC$(0)="o":enemyC$(1)=".":enemyC$(2)="*"
+	Dim gridArray$((gw+gsx),(gh+gsy))
+	Dim enemy(enemyBaseCount),ex(enemyBaseCount),ey(enemyBaseCount),ed(enemyBaseCount)
+
+
+'BEGIN MAIN LOOP --------
+Get Fonts
+	Set Font "topaz",11
+Do
+	Paper 0
+	Clw
+	
+	
+	NEWLEVEL:
+	
+		If restart
+			For gy=0 to (gh+gsy)-1
+				For gx=0 to (gw+gsx)-1
+					gridArray$(gx,gy)=gridC$
+				Next gx
+			Next gy
+			For e=0 To enemyBaseCount
+				enemy(e)=false: ex(e)=false: ey(e)=false: ed(e)=-1
+			Next e
+			
+			enemyTrigger=true: enemyCreateCount=enemyBaseCount: enemyHitCount=0
+			pk$="": px=pxBase: pd=0: py=pybase: shoot=false
+			missile=false: mx=0: my=0
+			level=level+1
+			
+			if score>highestScore Then highestScore=score
+			score=0
+			timCount=timBase
+
+			restart=false
+		End If
+	
+	
+	CREATEGRID:
+		Pen gridColor#
+		For gy=gsy-1 to gsy+gh-1
+			For gx=gsx-1 to gsx+gw-1
+				Locate gx+1,gy+1: Print gridArray$(gx,gy)
+			Next gx
+		Next gy
+	
+	
+	GameInterface:
+		
+		Pen 7: Locate 0,0: Centre "AMOS Attack"
+		Pen 8: Locate 0,1: Centre "Use < > and SPC"
+		Pen 6 
+		Locate 1,pybase+2: Print "score: ";score 
+		Locate 1,pybase+3: Print "time:  ";timCount
+		Locate 1,pybase+4: Print "high:  ";highestScore
+		Locate 1,pybase+5: Print "level: ";level
+	
+	PlayerActions:
+	
+		pk$=inkey$
+		If pk$=playerLeft$ Then pd=-1
+		If pk$=playerRight$ Then pd=1
+		If px>gw+gsx-1 Then px=gw+gsx-1
+		If px<gsx+1  Then px=gsx+1 
+		If pk$=playerShoot$ 
+			If missile and my < pybase-2 Then missile = false
+			shoot=true
+		End If
+
+		px=px+pd
+
+		Pen playerColor#: Locate px,py: Print playerC$
+		If pk$=gameExit$ Then Exit 
+
+
+	MissileActions:
+		
+		If shoot 
+			If not missile
+				missile=true
+				mx=px: my=py
+			End If
+			shoot=false
+		End If
+		
+		If missile
+			Dec my  
+			Pen missileColor#: Locate mx,my: Print missileC$
+			If my<gsy
+				missile=false
+			End If
+		End If
+
+
+	CollisionActions:
+  	For e=0 To enemyBaseCount
+			If enemy(e) and missile and (mx=ex(e) and my=ey(e)) 
+				missile=false
+				enemy(e)=false
+				enemyTrigger=true
+				gridArray$(mx-1,my-1)=bombC$
+				Inc enemyHitCount 
+				score = score + pybase-my
+			End If
+		Next e
+
+	EnemyActions:
+		
+		If enemyCreateCount>=0  
+			If enemyTrigger and not enemy(enemyCreateCount)
+				enemy(enemyCreateCount)=true
+				ex(enemyCreateCount)=gw+gsx: ey(enemyCreateCount)=gsy
+				ed(enemyCreateCount)=-1
+				Dec enemyCreateCount 
+			End If
+		Else
+				enemyTrigger=false
+		End If
+		
+		
+		If enemyHitCount <= enemyBaseCount
+			For e=0 To enemyBaseCount
+				If enemy(e)
+					ex(e)=ex(e)+ed(e)
+					If ex(e)<gsx+1 or ex(e)>gw+gsx-1 Then ey(e)=ey(e)+1
+					If gridArray$(ex(e)-1,ey(e)-1)=bombC$
+						ey(e)=ey(e)+Rnd(2) : Rem try to avoid multiple enemies together
+						ed(e)=ed(e)*-1
+					End If
+					If ey(e)>gh+gsy Then ey(e)=gsy
+					swapg = -swapg
+					Pen enemyColor#: Locate ex(e),ey(e): Print enemyC$(1+swapg)
+					If ex(e)<gsx+1 Then ed(e)=1
+					If ex(e)>gw+gsx-1 Then ed(e)=-1
+				End If
+			Next e
+		Else
+			restart = true
+		End If
+
+	Wait Vbl
+	Wait 1
+    timthis# = (Timer /1000)/timBase
+		timCount = timBase - ((timthis#)-int(timthis#))*timBase
+		if timCount <1 or restart
+			Locate 0,0
+			For s=0 to 20
+				vscroll 1
+				Wait 3
+			Next s
+			restart=true
+		End if
+			
+Loop
+'END MAIN LOOP--------
+
+ExitKey:
+	k$=""
+	while k$=""
+		k$=inkey$
+	wend
+	clw
+	end
+'
+ 

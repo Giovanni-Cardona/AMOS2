@@ -1,0 +1,127 @@
+
+Curs Off : 
+'Set Transparent 0
+'Cls 0: Paper 0: Pen 6
+Hot Spot 1, $32
+degree
+
+' --- Init vars
+mscreenx=320: mscreeny=200: mscreenHalfx=mscreenx/2 : mscreenHalfy=mscreeny/2
+bobsize=64: bobhalfsize=bobsize/2: bobquartsize=bobhalfsize/2 
+screencount=4: spx=1: spy=2
+x1=mscreenHalfx: y1=mscreenHalfy  
+PiHalf#=Pi#/2 : PiRound#=2*Pi#
+lyball = 1: lybdirection = 1 : pastScale = 1
+bOnce = 0: bZFlag = 0
+Dim screensize(screencount,2): 
+screensize(1,spx)=mscreenx: screensize(1,spy)=mscreeny
+screensize(2,spx)=256: screensize(2,spy)=160
+screensize(3,spx)=240: screensize(3,spy)=112
+screensize(4,spx)=224: screensize(4,spy)=88
+Dim gridblocksize(screencount): gridblocksize(2)=32: gridblocksize(3)=16: gridblocksize(4)=8
+Dim gridinkcolor(screencount) : gridinkcolor(2)=1  : gridinkcolor(3)=2  : gridinkcolor(4)=3
+Dim gridweight(screencount)   : gridweight(1)=1    : gridweight(2)=3    : gridweight(3)=2   : gridweight(4)=1
+Dim sinxmult(screencount) : sinxmult(1)=136: sinxmult(2)=22 : sinxmult(3)=42  : sinxmult(4)=56
+Dim sinymult(screencount) : sinymult(1)=56 : sinymult(2)=36 : sinymult(3)=24  : sinymult(4)=12
+Dim sinxoffs(screencount) : sinxoffs(1)=12: sinxoffs(2)=44 : sinxoffs(3)=52  : sinxoffs(4)=60
+Dim sinyoffs(screencount) : sinyoffs(1)=bobsize : sinyoffs(2)=44 : sinyoffs(3)=27  : sinyoffs(4)=12
+
+' -- create screens
+for screens=1 to screencount
+	CreateScreen[screens,screensize(screens,spx),screensize(screens,spy),gridweight(screens)]
+next screens
+
+' -- draw grids 
+for screens=2 to screencount
+	DrawGrid[screens, gridblocksize(screens), gridinkcolor(screens), gridweight(screens)]
+next screens
+' --
+
+screen 1: Bob 1,mscreenHalfx-bobhalfsize,mscreenHalfy-bobhalfsize,1
+
+'screen to back 0
+screen close 0
+
+	'-- START LOOP 
+	Do
+	   'move screens
+	    bx=-(sin(PiHalf#*x1*2))*sinxmult(1)+sinxoffs(1)
+		Screen Display 1,bx,-(sin(PiRound#*y1*2))*sinymult(1)+sinyoffs(1),,
+		for screens=2 to screencount
+	    	Screen Display screens,(sin(PiHalf#*x1*2))*sinxmult(screens)+sinxoffs(screens),(sin(PiRound#*y1*2))*sinymult(screens)+sinyoffs(screens),,
+        next screens
+
+		'Screen Offset 2,,y1 : 'offset not working with line draw
+        
+		'if ball right screen
+        if ((bx >= sinxmult(1)+sinxoffs(1)-1) or (bx <= -(sinxmult(1)-sinxoffs(1)))) and bOnce = 0
+		    'screen 0: cls 0: locate 0,0: print lyball
+			bOnce = 1 'once per loop
+		    'change ball direction
+			lyball = lyball + lybdirection
+			if (lyball > screencount or lyball < 1) 
+				lybdirection = lybdirection * -1 'reverse direction
+				lyball = lyball + lybdirection   'reset pos if out of bounds
+			end if
+			screen 1 : 'scale and move up ball between screens
+			Bob Scale 1,1/lyball,1/lyball 
+			Bob 1,(mscreenHalfx-bobhalfsize),(mscreenHalfy-bobhalfsize)-(lyball*bobquartsize)+bobquartsize,1 
+			're-arrange screen layers to move ball between layers
+			for ly=2 to 4
+			   Screen to back ly 
+			   if lyball=ly
+			   	 Screen to back 1 
+			   end if
+			next ly 
+			pastScale = lyball
+	    end if
+
+		if ((bx < sinxmult(1)+sinxoffs(1)-1) and (bx > -(sinxmult(1)-sinxoffs(1)))) then bOnce=0 'reset once per loop flag
+
+		Inc y1: Inc x1
+
+        'screen 0: cls 0: locate 10,0: print bx
+		if Inkey$ <> "" Then Exit
+
+		Wait Vbl: Wait Vbl
+	    'Wait 1
+
+	Loop
+	 
+
+ end
+ 
+
+procedure CreateScreen[p_screen_num, p_width, p_height, p_weight]
+ 	Screen Open p_screen_num,p_width+p_weight-1,p_height+p_weight-1,8,Lowres
+	Palette $000000, $0066EE, $1144BB, $224477
+	Curs Off : Flash Off: Set Transparent 0: Cls 0 
+	Screen Display p_screen_num,0,0,p_width,p_height
+	'Screen Offset p_screen_num,p_width,p_height
+ 	screen to back 
+ end proc
+ 
+ procedure DrawGrid[p_screen_num, p_steps, p_ink, p_weight]
+    Screen p_screen_num
+	Ink p_ink
+	BoxSize = p_steps
+	y=0: x=0 'why? 
+	'horizontal lines
+	for y=0 to Screen Height step 1
+		if (y mod BoxSize) = 0
+			for w=0 to p_weight-1
+				Draw 0,y+w to Screen Width,y+w
+		    next w
+	    end if
+	next y
+	'vertical lines
+	for x=0 to Screen Width step 1
+		if (x mod BoxSize) = 0
+			for w=0 to p_weight-1
+				Draw x+w,0 to x+w,Screen Height
+			next w
+	    end if
+	next x
+ end proc
+
+ 

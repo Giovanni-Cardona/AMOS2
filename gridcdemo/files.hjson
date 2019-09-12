@@ -1,0 +1,943 @@
+{
+  version: 0.7 - 07/08/2019
+  rootPath: /users/giovanni/downloads/amos/applications/gridcdemo/html
+  infos:
+  {
+    "\"run/application.js_utf8\"": -599471683
+    "\"run/sprites.js_utf8\"": -561173216
+    "\"resources/sprites/amigaball.js_utf8\"": -1625532381
+    "\"resources/fonts/amiga/topaz.js_utf8\"": -1360360973
+    "\"run/fonts.js_utf8\"": -1822992293
+    "\"run/filesystem.js_utf8\"": -1896388346
+    "\"run/resources/cursor.js_utf8\"": 1111716123
+    "\"run/amal.js_utf8\"": -1896820770
+    "\"run/amalcompiler.js_utf8\"": 1325609848
+    "\"run/amos.js_utf8\"": -2016764413
+    "\"run/banks.js_utf8\"": -2050735212
+    "\"run/dos.js_utf8\"": -1614766839
+    "\"run/errors.js_utf8\"": -141193905
+    "\"run/files.js_utf8\"": -172087752
+    "\"run/fontfaceobserver.standalone.js_utf8\"": 1941667313
+    "\"run/renderer.js_utf8\"": 705889567
+    "\"run/screens.js_utf8\"": 840602936
+    "\"run/utilities.js_utf8\"": 1950570122
+    "\"run/windows.js_utf8\"": 330716234
+    "\"index.html_utf8\"": -748255542
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-100.eot\"":
+    {
+      size: 58088
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-100.svg\"":
+    {
+      size: 49675
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-100.ttf\"":
+    {
+      size: 132100
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-100.woff\"":
+    {
+      size: 64700
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-100.woff2\"":
+    {
+      size: 49988
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-100italic.eot\"":
+    {
+      size: 62556
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-100italic.svg\"":
+    {
+      size: 56194
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-100italic.ttf\"":
+    {
+      size: 135068
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-100italic.woff\"":
+    {
+      size: 69568
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-100italic.woff2\"":
+    {
+      size: 53900
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-300.eot\"":
+    {
+      size: 59393
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-300.svg\"":
+    {
+      size: 49248
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-300.ttf\"":
+    {
+      size: 130640
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-300.woff\"":
+    {
+      size: 65784
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-300.woff2\"":
+    {
+      size: 50812
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-300italic.eot\"":
+    {
+      size: 64726
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-300italic.svg\"":
+    {
+      size: 54885
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-300italic.ttf\"":
+    {
+      size: 134996
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-300italic.woff\"":
+    {
+      size: 71248
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-300italic.woff2\"":
+    {
+      size: 55724
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-500.eot\"":
+    {
+      size: 60298
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-500.svg\"":
+    {
+      size: 48624
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-500.ttf\"":
+    {
+      size: 132100
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-500.woff\"":
+    {
+      size: 66456
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-500.woff2\"":
+    {
+      size: 51400
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-500italic.eot\"":
+    {
+      size: 65334
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-500italic.svg\"":
+    {
+      size: 53825
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-500italic.ttf\"":
+    {
+      size: 135908
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-500italic.woff\"":
+    {
+      size: 71640
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-500italic.woff2\"":
+    {
+      size: 55912
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-700.eot\"":
+    {
+      size: 59829
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-700.svg\"":
+    {
+      size: 48982
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-700.ttf\"":
+    {
+      size: 131008
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-700.woff\"":
+    {
+      size: 66260
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-700.woff2\"":
+    {
+      size: 51088
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-700italic.eot\"":
+    {
+      size: 64455
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-700italic.svg\"":
+    {
+      size: 53453
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-700italic.ttf\"":
+    {
+      size: 134500
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-700italic.woff\"":
+    {
+      size: 70756
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-700italic.woff2\"":
+    {
+      size: 55192
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-900.eot\"":
+    {
+      size: 59887
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-900.svg\"":
+    {
+      size: 48022
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-900.ttf\"":
+    {
+      size: 131608
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-900.woff\"":
+    {
+      size: 66412
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-900.woff2\"":
+    {
+      size: 51212
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-900italic.eot\"":
+    {
+      size: 65948
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-900italic.svg\"":
+    {
+      size: 53240
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-900italic.ttf\"":
+    {
+      size: 136420
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-900italic.woff\"":
+    {
+      size: 72360
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-900italic.woff2\"":
+    {
+      size: 56556
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-italic.eot\"":
+    {
+      size: 64104
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-italic.svg\"":
+    {
+      size: 54053
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-italic.ttf\"":
+    {
+      size: 133248
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-italic.woff\"":
+    {
+      size: 70252
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-italic.woff2\"":
+    {
+      size: 54984
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-regular.eot\"":
+    {
+      size: 59644
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-regular.svg\"":
+    {
+      size: 48974
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-regular.ttf\"":
+    {
+      size: 131916
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-regular.woff\"":
+    {
+      size: 66044
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/roboto-v20-latin-ext_greek-ext_greek_vietnamese_latin_cyrillic_cyrillic-ext-regular.woff2\"":
+    {
+      size: 51116
+      date: 2019-07-28T14:52:06.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-100.eot\"":
+    {
+      size: 39649
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-100.svg\"":
+    {
+      size: 52130
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-100.ttf\"":
+    {
+      size: 107492
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-100.woff\"":
+    {
+      size: 45672
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-100.woff2\"":
+    {
+      size: 33536
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-100italic.eot\"":
+    {
+      size: 43331
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-100italic.svg\"":
+    {
+      size: 61826
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-100italic.ttf\"":
+    {
+      size: 114696
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-100italic.woff\"":
+    {
+      size: 50108
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-100italic.woff2\"":
+    {
+      size: 36536
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-200.eot\"":
+    {
+      size: 39965
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-200.svg\"":
+    {
+      size: 51756
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-200.ttf\"":
+    {
+      size: 105692
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-200.woff\"":
+    {
+      size: 45624
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-200.woff2\"":
+    {
+      size: 33660
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-200italic.eot\"":
+    {
+      size: 44166
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-200italic.svg\"":
+    {
+      size: 62498
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-200italic.ttf\"":
+    {
+      size: 113220
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-200italic.woff\"":
+    {
+      size: 50772
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-200italic.woff2\"":
+    {
+      size: 37316
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-300.eot\"":
+    {
+      size: 39709
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-300.svg\"":
+    {
+      size: 51323
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-300.ttf\"":
+    {
+      size: 104884
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-300.woff\"":
+    {
+      size: 45292
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-300.woff2\"":
+    {
+      size: 33564
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-300italic.eot\"":
+    {
+      size: 44289
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-300italic.svg\"":
+    {
+      size: 62040
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-300italic.ttf\"":
+    {
+      size: 112080
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-300italic.woff\"":
+    {
+      size: 50964
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-300italic.woff2\"":
+    {
+      size: 37488
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-500.eot\"":
+    {
+      size: 40712
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-500.svg\"":
+    {
+      size: 52322
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-500.ttf\"":
+    {
+      size: 106348
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-500.woff\"":
+    {
+      size: 46360
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-500.woff2\"":
+    {
+      size: 34312
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-500italic.eot\"":
+    {
+      size: 45343
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-500italic.svg\"":
+    {
+      size: 62747
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-500italic.ttf\"":
+    {
+      size: 112740
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-500italic.woff\"":
+    {
+      size: 51916
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-500italic.woff2\"":
+    {
+      size: 38420
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-600.eot\"":
+    {
+      size: 40909
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-600.svg\"":
+    {
+      size: 52161
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-600.ttf\"":
+    {
+      size: 109844
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-600.woff\"":
+    {
+      size: 47420
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-600.woff2\"":
+    {
+      size: 35300
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-600italic.eot\"":
+    {
+      size: 45252
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-600italic.svg\"":
+    {
+      size: 62328
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-600italic.ttf\"":
+    {
+      size: 116040
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-600italic.woff\"":
+    {
+      size: 52576
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-600italic.woff2\"":
+    {
+      size: 39028
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-700.eot\"":
+    {
+      size: 41084
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-700.svg\"":
+    {
+      size: 52207
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-700.ttf\"":
+    {
+      size: 107432
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-700.woff\"":
+    {
+      size: 46692
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-700.woff2\"":
+    {
+      size: 34608
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-700italic.eot\"":
+    {
+      size: 44757
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-700italic.svg\"":
+    {
+      size: 63002
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-700italic.ttf\"":
+    {
+      size: 113272
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-700italic.woff\"":
+    {
+      size: 51236
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-700italic.woff2\"":
+    {
+      size: 37868
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-italic.eot\"":
+    {
+      size: 43955
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-italic.svg\"":
+    {
+      size: 63526
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-italic.ttf\"":
+    {
+      size: 112664
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-italic.woff\"":
+    {
+      size: 50656
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-italic.woff2\"":
+    {
+      size: 37404
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-regular.eot\"":
+    {
+      size: 39533
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-regular.svg\"":
+    {
+      size: 53494
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-regular.ttf\"":
+    {
+      size: 105184
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-regular.woff\"":
+    {
+      size: 45276
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"resources/fonts/google/ibm-plex-mono-v5-latin-ext_cyrillic_latin_cyrillic-ext-regular.woff2\"":
+    {
+      size: 33408
+      date: 2019-07-30T03:11:32.000Z
+    }
+    "\"run/resources/full_screen.png\"":
+    {
+      size: 996
+      date: 2019-08-07T03:22:50.987Z
+    }
+    "\"run/resources/small_screen.png\"":
+    {
+      size: 983
+      date: 2019-08-07T03:22:38.106Z
+    }
+    "\"run/resources/star_night.jpeg\"":
+    {
+      size: 2829668
+      date: 2019-06-26T09:46:47.000Z
+    }
+    "\"resources/sprites/1.js_utf8\"": -977593486
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-100.eot\"":
+    {
+      size: 52913
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-100.svg\"":
+    {
+      size: 72644
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-100.ttf\"":
+    {
+      size: 102544
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-100.woff\"":
+    {
+      size: 59064
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-100.woff2\"":
+    {
+      size: 46904
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-100italic.eot\"":
+    {
+      size: 55303
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-100italic.svg\"":
+    {
+      size: 75623
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-100italic.ttf\"":
+    {
+      size: 105636
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-100italic.woff\"":
+    {
+      size: 61852
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-100italic.woff2\"":
+    {
+      size: 48696
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-300.eot\"":
+    {
+      size: 52301
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-300.svg\"":
+    {
+      size: 69881
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-300.ttf\"":
+    {
+      size: 103624
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-300.woff\"":
+    {
+      size: 58536
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-300.woff2\"":
+    {
+      size: 46240
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-300italic.eot\"":
+    {
+      size: 56719
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-300italic.svg\"":
+    {
+      size: 74994
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-300italic.ttf\"":
+    {
+      size: 111876
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-300italic.woff\"":
+    {
+      size: 63444
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-300italic.woff2\"":
+    {
+      size: 49932
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-500.eot\"":
+    {
+      size: 50879
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-500.svg\"":
+    {
+      size: 67650
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-500.ttf\"":
+    {
+      size: 99628
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-500.woff\"":
+    {
+      size: 56592
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-500.woff2\"":
+    {
+      size: 44620
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-500italic.eot\"":
+    {
+      size: 56317
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-500italic.svg\"":
+    {
+      size: 74806
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-500italic.ttf\"":
+    {
+      size: 108000
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-500italic.woff\"":
+    {
+      size: 62856
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-500italic.woff2\"":
+    {
+      size: 49492
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-700.eot\"":
+    {
+      size: 50847
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-700.svg\"":
+    {
+      size: 68623
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-700.ttf\"":
+    {
+      size: 99936
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-700.woff\"":
+    {
+      size: 56808
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-700.woff2\"":
+    {
+      size: 44820
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-700italic.eot\"":
+    {
+      size: 56008
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-700italic.svg\"":
+    {
+      size: 75072
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-700italic.ttf\"":
+    {
+      size: 107252
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-700italic.woff\"":
+    {
+      size: 62744
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-700italic.woff2\"":
+    {
+      size: 49408
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-italic.eot\"":
+    {
+      size: 55679
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-italic.svg\"":
+    {
+      size: 73757
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-italic.ttf\"":
+    {
+      size: 105212
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-italic.woff\"":
+    {
+      size: 62144
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-italic.woff2\"":
+    {
+      size: 48880
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-regular.eot\"":
+    {
+      size: 50538
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-regular.svg\"":
+    {
+      size: 68990
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-regular.ttf\"":
+    {
+      size: 99504
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-regular.woff\"":
+    {
+      size: 56528
+      date: 2019-07-30T04:01:16.000Z
+    }
+    "\"resources/fonts/google/roboto-mono-v7-latin-ext_greek_greek-ext_cyrillic_latin_cyrillic-ext-regular.woff2\"":
+    {
+      size: 44588
+      date: 2019-07-30T04:01:16.000Z
+    }
+  }
+}
